@@ -3,8 +3,10 @@ namespace _beeflex {
     design: number;
     width: number;
     height: number;
+    dpr: number;
     rem: number;
   }
+  const viewport = document.querySelector('meta[name="viewport"]') as Element;
   export class BeeFlex {
     public options: IOption = {} as IOption;
     private callback: any;
@@ -25,6 +27,13 @@ namespace _beeflex {
     private setRem() {
       this.options.rem = this.options.width / (this.options.design / 100);
       document.documentElement.style.fontSize = this.options.rem + "px";
+    }
+    private setDpr() {
+      this.options.dpr = devicePixelRatio;
+    }
+    private setViewPort() {
+      const scale = 1 / this.options.dpr;
+      viewport.setAttribute("content", `width=device-width, initial-scale=${scale}, user-scalable=no`);
     }
     private resize() {
       let timer: any;

@@ -3,8 +3,13 @@
   "version": "1.1.0",
   "description": "flex",
   "main": "src",
+  "typings": "types/index.d.ts",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  },
   "scripts": {},
   "repository": {
     "type": "git",
@@ -13,10 +18,12 @@
   "keywords": [
     "flex"
   ],
-  "authors": [{
-    "name": "dasoncheng",
-    "email": "dasoncheng@foxmail.com"
-  }],
+  "authors": [
+    {
+      "name": "dasoncheng",
+      "email": "dasoncheng@foxmail.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/myour-cc/bee-flex/issues"
