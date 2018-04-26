@@ -24,14 +24,16 @@ import beeflex from 'bee-flex'
 - cdn
 
 ```html
-<script src="https://unpkg.com/bee-flex/build"></script>
+<script src="https://unpkg.com/bee-flex@1.1.1/build"></script>
 ```
 
 ### 使用
 ```javascript
 // beeflex(design,callback)
 
-beeflex(750,(options)=>{
+beeflex({
+  design:750
+},(options)=>{
   console.log(options)
 })
 ```
@@ -40,8 +42,15 @@ beeflex(750,(options)=>{
 ### 参数
 | 属性       | 类型       | 解释                               |
 | :------- | :------- | :------------------------------- |
-| design   | number   | 设计稿宽度                            |
+| config   | object   | 配置                            |
 | callback | function | 回调函数，options为浏览器窗口信息 |
+
+#### config
+
+| 属性       | 类型       | 解释                               |
+| :------- | :------- | :------------------------------- |
+| design   | number   | 设计稿宽度                            |
+| max | number | 最大宽度 |
 
 #### options
 

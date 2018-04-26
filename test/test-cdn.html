@@ -8,7 +8,10 @@
   <title>Document</title>
   <script src="../build/index.js"></script>
   <script>
-    beeflex(750, option => {
+    beeflex({
+      design: 750,
+      max: 600
+    }, option => {
       console.log(option)
     })
 

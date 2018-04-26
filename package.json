@@ -1,16 +1,19 @@
 {
   "name": "bee-flex",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "flex",
   "main": "src",
   "typings": "types/index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "eslint": "^4.19.1",
+    "parcel-bundler": "^1.7.1",
     "tslint": "^5.9.1",
     "typescript": "^2.8.1"
   },
-  "scripts": {},
+  "scripts": {
+    "test:pkg": "npx parcel test/test-package.html"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/myour-cc/bee-flex.git"
@@ -18,12 +21,10 @@
   "keywords": [
     "flex"
   ],
-  "authors": [
-    {
-      "name": "dasoncheng",
-      "email": "dasoncheng@foxmail.com"
-    }
-  ],
+  "authors": [{
+    "name": "dasoncheng",
+    "email": "dasoncheng@foxmail.com"
+  }],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/myour-cc/bee-flex/issues"

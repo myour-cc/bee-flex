@@ -1,1 +1,2 @@
-export default function beeflex(desgin: number, callback: any): any
+import BeeFlex from '../src/index'
+export default BeeFlex
