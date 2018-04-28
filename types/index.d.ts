@@ -1,2 +1,3 @@
-import BeeFlex from '../src/index'
-export default BeeFlex
+declare module 'bee-flex' {
+  export default function (configs: { design?: number, max?: number }, callback: any): object
+}

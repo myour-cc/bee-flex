@@ -24,7 +24,7 @@ import beeflex from 'bee-flex'
 - cdn
 
 ```html
-<script src="https://unpkg.com/bee-flex@1.1.1/build"></script>
+<script src="https://unpkg.com/bee-flex@1.1.2/build"></script>
 ```
 
 ### 使用
@@ -45,7 +45,7 @@ beeflex({
 | config   | object   | 配置                            |
 | callback | function | 回调函数，options为浏览器窗口信息 |
 
-#### config
+#### configs
 
 | 属性       | 类型       | 解释                               |
 | :------- | :------- | :------------------------------- |
