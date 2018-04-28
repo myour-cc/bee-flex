@@ -5,7 +5,11 @@
   ],
   "jsRules": {},
   "rules": {
-    "no-namespace": false
+    "no-namespace": false,
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
   },
   "rulesDirectory": []
 }
