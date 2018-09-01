@@ -1,3 +1,14 @@
-declare module 'bee-flex' {
-  export default function (configs: { design?: number, max?: number }, callback: any): object
-}
+export default function(
+  configs: { design?: number; max?: number },
+  callback?: (
+    options: {
+      design: number;
+      scale: boolean;
+      width: number;
+      height: number;
+      dpr: number;
+      rem: number;
+      max: number;
+    }
+  ) => {}
+): object;
